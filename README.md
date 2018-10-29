@@ -1,6 +1,6 @@
-## graficacion 4ta unidad jacket
+# graficacion 4ta unidad jacket
 
-# avances
+## avances
 - [X] fondo degradado
 - [ ] lineas en el fondo
 - [ ] sol
@@ -22,3 +22,6 @@
 - [ ] mascara
 - [ ] manchas
 - [ ] degradado parte inferior
+
+## Imagen
+![Imagen a diseñar](/image-44585998-hotline-miami-iphone-wallpaper.jpg)
