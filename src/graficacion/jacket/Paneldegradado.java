@@ -1,27 +1,23 @@
-package graficacion.jacket;
-
-import java.awt.FlowLayout;
-import java.awt.BorderLayout;
+package Graficacion.jacket;
 import java.awt.Color;
-import java.awt.Font;
+import javax.swing.JPanel;
 import java.awt.GradientPaint;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import javax.swing.JLabel;
-import javax.swing.JLabel;
-import javax.swing.*;
+/**
+ *
+ * @author Usuario
+ */
+class degradadoHorizontal extends JPanel {
 
-public class Paneldegradado extends JPanel {
-    public Paneldegradado(){
-  setLayout(new BorderLayout());
- }
- 
- public void paintComponent(Graphics g){
-  super.paintComponents(g);
-  Graphics2D g2d=(Graphics2D)g;
-  Color azulfuerte = new Color(0,0,162);
-  Color rosafuerte = new Color (255,47,162);
-  g2d.setPaint(new GradientPaint(200, 0, azulfuerte, 200, 400, rosafuerte));
-  g2d.fillRect(0, 0, 400, 600);
- }
+    public degradadoHorizontal() {
+    }
+    public void paint(Graphics g){
+        Graphics2D g2d=(Graphics2D)g;
+        //Creo el degradado horizontal con las
+        //coordenadas (0,0) al (anchura del componente, 0)
+        GradientPaint horizontalGradient = new GradientPaint (0,0, Color.RED, getWidth(),0,Color.BLUE);
+        g2d.setPaint(horizontalGradient);
+        g2d.fillRect(0,0, getWidth(), getHeight());
+    }
 }
