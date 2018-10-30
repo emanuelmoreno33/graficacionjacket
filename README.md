@@ -3,8 +3,8 @@
 ## avances
 - [X] fondo degradado
 - [ ] lineas en el fondo
-- [ ] sol
-- [ ] ciudad
+- [X] sol
+- [X] ciudad
 - [ ] palmas
 - [ ] torso
 * letra B
