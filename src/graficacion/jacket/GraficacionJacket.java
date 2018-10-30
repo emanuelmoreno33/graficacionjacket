@@ -21,10 +21,13 @@ public class GraficacionJacket extends JFrame{
         window.setTitle("Primera ventana");
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         degradadolineal degradado = new degradadolineal();
-        degradado.setBounds(0, 0, 400, 600);
+        sol soldibujo = new sol();
+        degradado.setBounds(0, 0, 350, 650);
         window.getContentPane().add(degradado);
+        soldibujo.setBounds(0, 0, 350, 650);
+        window.getContentPane().add(soldibujo);
         window.setVisible(true);
-        window.setSize(400,600);
+        window.setSize(350,650);
         
     }
 }
