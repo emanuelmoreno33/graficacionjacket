@@ -60,13 +60,20 @@ public class GraficacionJacket extends JFrame{
         degradadolineal degradado = new degradadolineal();
         sol soldibujo = new sol();
         ciudad ciudaddibujo = new ciudad();
-        //el que se muestra primero va arriba,lo que seria la mascara, al final debe estar el degradado
+        palmas palmasdibujo = new palmas();
+//el que se muestra primero va arriba,lo que seria la mascara, al final debe estar el degradado
+        palmasdibujo.setBounds(0,0,350,650);
+        window.getContentPane().add(palmasdibujo);
+        
         ciudaddibujo.setBounds(0,0,350,650);
-         window.getContentPane().add(ciudaddibujo);
+        window.getContentPane().add(ciudaddibujo);
+        
         soldibujo.setBounds(0, 0, 350, 650);
         window.getContentPane().add(soldibujo);
+        
         degradado.setBounds(0, 0, 350, 650);
         window.getContentPane().add(degradado);
+        
         window.setVisible(true);
         window.setSize(356,649);  
         
