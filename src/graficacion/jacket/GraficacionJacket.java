@@ -23,36 +23,13 @@ import javax.swing.*;
  * @author Maxcel Center
  */
 public class GraficacionJacket extends JFrame{
-    
-        JButton aceptar = new JButton("Aceptar");
-
- 
-	//CREAMOS UN PANEL PARA COLOCAR LOS BOTONES
-	JPanel principal = new JPanel(new BorderLayout());
  
 	public GraficacionJacket(){
-		super("Botones");
-		principal.add("North", aceptar);
- 
-		getContentPane().add(principal);
- 
-		//AGREGAMOS TOOL TIPS A LOS BOTONES
-		aceptar.setToolTipText("Botón ACEPTAR...");
- 
-		pack();
-		setResizable(false);
-		Dimension pantalla, cuadro;
-		pantalla = Toolkit.getDefaultToolkit().getScreenSize();
-		cuadro = this.getSize();
- 
-		this.setLocation(((pantalla.width - cuadro.width)/2), (pantalla.height - cuadro.height)/2);
-	}//FIN DEL CONSTRUCTOR DE LA CLASE
+
+	}
     
     public static void main(String[] args)
-    {
-        GraficacionJacket p = new GraficacionJacket();
-        p.show();
-        
+    {        
         ventana window = new ventana();
         window.setTitle("Primera ventana");
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -60,21 +37,24 @@ public class GraficacionJacket extends JFrame{
         degradadolineal degradado = new degradadolineal();
         sol soldibujo = new sol();
         ciudad ciudaddibujo = new ciudad();
-        //el que se muestra primero va arriba,lo que seria la mascara, al final debe estar el degradado
+        palmas palmasdibujo = new palmas();
+        
+//el que se muestra primero va arriba,lo que seria la mascara, al final debe estar el degradado
+        palmasdibujo.setBounds(0,0,350,650);
+        window.getContentPane().add(palmasdibujo);
+        
         ciudaddibujo.setBounds(0,0,350,650);
-         window.getContentPane().add(ciudaddibujo);
+        window.getContentPane().add(ciudaddibujo);
+        
         soldibujo.setBounds(0, 0, 350, 650);
         window.getContentPane().add(soldibujo);
+        
         degradado.setBounds(0, 0, 350, 650);
         window.getContentPane().add(degradado);
+        
         window.setVisible(true);
         window.setSize(356,649);  
         
-        p.addWindowListener(new WindowAdapter(){
-			public void windowClosing(WindowEvent evt){
-				System.exit(0);
-			}
-		});
     }
     
     
