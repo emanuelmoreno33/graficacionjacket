@@ -6,6 +6,9 @@
 - [X] sol
 - [X] ciudad
 - [ ] palmas
+* Palma derecha
+* Palma izquierda central
+* Palma izquierda abajo
 - [ ] torso
 * letra B
 * elastico torso
