@@ -38,7 +38,7 @@ public class GraficacionJacket extends JFrame{
         sol soldibujo = new sol();
         ciudad ciudaddibujo = new ciudad();
         palmas palmasdibujo = new palmas();
-        
+        lineasfondo lineasdibujo = new lineasfondo();
 //el que se muestra primero va arriba,lo que seria la mascara, al final debe estar el degradado
         palmasdibujo.setBounds(0,0,350,650);
         window.getContentPane().add(palmasdibujo);
@@ -48,6 +48,9 @@ public class GraficacionJacket extends JFrame{
         
         soldibujo.setBounds(0, 0, 350, 650);
         window.getContentPane().add(soldibujo);
+        
+        lineasdibujo.setBounds(0,0,350,650);
+        window.getContentPane().add(lineasdibujo);
         
         degradado.setBounds(0, 0, 350, 650);
         window.getContentPane().add(degradado);
