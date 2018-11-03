@@ -31,15 +31,23 @@ public class GraficacionJacket extends JFrame{
     public static void main(String[] args)
     {        
         ventana window = new ventana();
-        window.setTitle("Primera ventana");
+        window.setTitle("Graficacion 4ta Unidad - Jacket");
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         //declaras las clases
         degradadolineal degradado = new degradadolineal();
         sol soldibujo = new sol();
         ciudad ciudaddibujo = new ciudad();
         palmas palmasdibujo = new palmas();
-        lineasfondo lineasdibujo = new lineasfondo();
+        Torso torsodibujo = new Torso();
+        Pantalon pantalondibujo = new Pantalon();
 //el que se muestra primero va arriba,lo que seria la mascara, al final debe estar el degradado
+        
+        pantalondibujo.setBounds(0,0,350,650);
+        window.getContentPane().add(pantalondibujo);
+
+        torsodibujo.setBounds(0,0,350,650);
+        window.getContentPane().add(torsodibujo);
+
         palmasdibujo.setBounds(0,0,350,650);
         window.getContentPane().add(palmasdibujo);
         
@@ -48,9 +56,6 @@ public class GraficacionJacket extends JFrame{
         
         soldibujo.setBounds(0, 0, 350, 650);
         window.getContentPane().add(soldibujo);
-        
-        lineasdibujo.setBounds(0,0,350,650);
-        window.getContentPane().add(lineasdibujo);
         
         degradado.setBounds(0, 0, 350, 650);
         window.getContentPane().add(degradado);
