@@ -30,10 +30,10 @@ public void paint(Graphics g){
              173,199,218,235,244,276,283,287,289,294,
              303,317,333,352,374,367,366,369,385
         };
-        g.setColor(Color.BLACK);
-        g.drawPolygon(chx,chy,49);
         g.setColor(marronchamarra);
         g.fillPolygon(chx,chy,49);
+        g.setColor(Color.BLACK);
+        g.drawPolygon(chx,chy,49);
         
     //botones
         Color boton = new Color(222,139,125);
@@ -108,6 +108,74 @@ public void paint(Graphics g){
         g.drawPolyline(bilx, bily, 4);
         
         //letra B
+        Color letra = new Color(246,219,176);
+        int [] bx = {
+            166,162,163,169,166,166,173,196,203,203,
+            201,197,205,205,199,186,180,173
+        };
+        int [] by = {
+            241,239,223,193,192,185,180,179,187,198,
+            202,207,216,228,235,240,242,242
+        };        
+        g.setColor(letra);
+        g.fillPolygon(bx, by, 17);
+        g.setColor(Color.BLACK);
+        g.drawPolygon(bx, by, 17);
+        
+        int [] bx2 = {
+            167,165,165,172,168,168,173,180,196,200,
+            200,194,191,194,197,202,202,193,186,179,175,167
+        };
+        int [] by2 = {
+            238,236,224,191,190,186,184,182,182,187,
+            198,207,208,209,210,218,228,235,237,239,239,239
+        };
+        g.setColor(letra);
+        g.fillPolygon(bx2, by2, 22);
+        g.setColor(Color.BLACK);
+        g.drawPolygon(bx2, by2, 22);
+        
+        int []ba1x = {
+         181,187,191,191,186,185,180,179,179
+        };
+        int []ba1y={
+         190,190,192,196,201,202,202,200,193
+        };
+        g.setColor(letra);
+        g.fillPolygon(ba1x, ba1y, 9);
+        g.setColor(Color.BLACK);
+        g.drawPolygon(ba1x, ba1y, 9);
+         int []bb1x = {
+        177,184,191,191,185,176,174
+        };
+        int []bb1y={
+        214,215,218,224,229,229,228
+        };
+        g.setColor(letra);
+        g.fillPolygon(bb1x, bb1y, 7);
+        g.setColor(Color.BLACK);
+        g.drawPolygon(bb1x, bb1y, 7);
+        
+        int []ba2x = {
+         182,187,189,189,186,184,181,181
+        };
+        int []ba2y={
+         192,193,194,196,198,199,199,194
+        };
+        g.setColor(marronchamarra);
+        g.fillPolygon(ba2x, ba2y, 8);
+        g.setColor(Color.BLACK);
+        g.drawPolygon(ba2x, ba2y, 8);
+        int []bb2x = {
+        177,177,179,185,188,188,184,176
+        };
+        int []bb2y={
+        226,221,216,217,220,223,226,227
+        };
+        g.setColor(marronchamarra);
+        g.fillPolygon(bb2x, bb2y, 7);
+        g.setColor(Color.BLACK);
+        g.drawPolygon(bb2x, bb2y, 7);
         
     //playera
         Color azulplayera = new Color(56, 119, 196);

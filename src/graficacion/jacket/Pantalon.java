@@ -23,10 +23,10 @@ public class Pantalon extends JPanel{
                      418,385,369,367,367,380,412,452,467,519,
                      525,536,549,565,581,610,610,603,590,580,
                      532,520,512,456,554,582,598,610
-        };
-        g.setColor(Color.BLACK);
-        g.drawPolygon(vx, vy, 38);
+        };        
         g.setColor(azulpantalon);
         g.fillPolygon(vx,vy,38);
+        g.setColor(Color.BLACK);
+        g.drawPolygon(vx, vy, 38);
     }
 }
