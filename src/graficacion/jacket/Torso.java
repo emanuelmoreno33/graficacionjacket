@@ -25,7 +25,7 @@ public void paint(Graphics g){
         };
         int [] chy = {
              384,368,361,348,341,297,295,291,274,268,
-             260,254,243,223,197,162,169,174,189,219,
+             260,254,243,223,197,163,169,174,189,219,
              254,245,224,207,173,166,142,142,145,155,
              173,199,218,235,244,276,283,287,289,294,
              303,317,333,352,374,367,366,369,385
@@ -177,7 +177,53 @@ public void paint(Graphics g){
         g.setColor(Color.BLACK);
         g.drawPolygon(bb2x, bb2y, 7);
         
+        int [] zipx={
+            144,143,141,142,144,143,146
+        };
+        int [] zipy={
+            253,304,312,328,344,365,369
+        };
+        g.setColor(Color.BLACK);
+        g.drawPolyline(zipx, zipy, 7);
+        
+        int[] elasx={
+            95,112,144,149,220,247
+        };
+        int [] elasy={
+            366,354,344,343,343,353
+        };
+        g.drawPolyline(elasx,elasy, 6);
     //playera
-        Color azulplayera = new Color(56, 119, 196);
+        Color azulplayera = new Color(41, 202, 210);
+        Color azulplayera2 = new Color(6, 146, 162);
+        int [] play1x = {
+            148,143,144,148,151,151,152,152
+        };
+        int [] play1y = {
+            224,215,170,169,169,179,191,207
+        };
+        g.setColor(azulplayera);
+        g.fillPolygon(play1x, play1y, 8);
+        int [] play2x = {
+            143,142,138,137,133,126,126,132,136,144,
+            144,147,148
+        };
+        int [] play2y = {
+            253,241,220,193,185,175,163,168,169,169,
+            213,223,244
+        };
+        g.setColor(azulplayera2);
+        g.fillPolygon(play2x, play2y, 13);
+        g.setColor(Color.BLACK);
+        
+        int [] cuellox={
+            125,125,132,135,151,151,148,134,131,
+        };
+        int [] cuelloy={
+            167,163,168,169,169,173,173,173,171,
+        };
+        
+        g.drawPolygon(cuellox,cuelloy, 9);
+        
     }
 }
