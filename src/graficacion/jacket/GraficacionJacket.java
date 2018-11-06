@@ -40,8 +40,11 @@ public class GraficacionJacket extends JFrame{
         palmas palmasdibujo = new palmas();
         Torso torsodibujo = new Torso();
         Pantalon pantalondibujo = new Pantalon();
+        brazos brazosdibujo = new brazos();
 //el que se muestra primero va arriba,lo que seria la mascara, al final debe estar el degradado
-
+        brazosdibujo.setBounds(0, 0, 350, 650);
+        window.getContentPane().add(brazosdibujo);
+        
         torsodibujo.setBounds(0,0,350,650);
         window.getContentPane().add(torsodibujo);
 
