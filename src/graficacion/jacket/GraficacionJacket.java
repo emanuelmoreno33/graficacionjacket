@@ -12,6 +12,7 @@ import java.awt.event.*;
 
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
+import java.beans.PropertyChangeListener;
 import java.io.File;
 import java.io.IOException;
 
@@ -41,7 +42,11 @@ public class GraficacionJacket extends JFrame{
         Torso torsodibujo = new Torso();
         Pantalon pantalondibujo = new Pantalon();
         brazos brazosdibujo = new brazos();
+        manomartillo manoderecha = new manomartillo();
 //el que se muestra primero va arriba,lo que seria la mascara, al final debe estar el degradado
+        manoderecha.setBounds(0, 0, 350, 650);
+        window.getContentPane().add(manoderecha);
+
         brazosdibujo.setBounds(0, 0, 350, 650);
         window.getContentPane().add(brazosdibujo);
         
@@ -63,13 +68,21 @@ public class GraficacionJacket extends JFrame{
         degradado.setBounds(0, 0, 350, 650);
         window.getContentPane().add(degradado);
         
+        JButton boton = new JButton();
+        boton.setText("Guardar");
+        boton.addActionListener((ActionEvent e) -> {
+            guardar(window);
+        });
+        boton.setLocation(400, 300);
+        boton.setSize(10,10);
+        window.add(boton);
         window.setVisible(true);
-        window.setSize(356,649);  
+        window.setSize(420,649);  
         
     }
     
     
-    public void guardar(ventana ven)
+    public static void guardar(ventana ven)
     {
         File fichero = new File("foto.jpg");
 		String formato = "jpg";
