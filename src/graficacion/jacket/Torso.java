@@ -14,6 +14,16 @@ public Torso()
 public void paint(Graphics g){
         Graphics2D g2d=(Graphics2D)g;
 //torso
+    //cuello
+    Color pielcuello = new Color(167,129,133);
+    int [] pielx = {
+        125,133,150,159,155,128
+    };
+    int [] piely = {
+        165,171,172,171,158,157
+    };
+    g.setColor(pielcuello);
+    g.fillPolygon(pielx, piely, 6);
     //chamarra
         Color marronchamarra = new Color(169, 87, 101);
         int [] chx = {

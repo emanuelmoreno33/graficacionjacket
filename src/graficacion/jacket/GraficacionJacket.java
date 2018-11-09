@@ -74,7 +74,7 @@ public class GraficacionJacket extends JFrame{
             guardar(window);
         });
         boton.setLocation(400, 300);
-        boton.setSize(10,10);
+        boton.setSize(100,50);
         window.add(boton);
         window.setVisible(true);
         window.setSize(420,649);  
