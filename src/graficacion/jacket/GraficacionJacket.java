@@ -1,28 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package graficacion.jacket;
-import java.awt.GridLayout;
-import java.awt.FlowLayout;
-import java.awt.*;
-import javax.swing.JFrame;
 import java.awt.event.*;
 
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
-import java.beans.PropertyChangeListener;
 import java.io.File;
+import javax.swing.JFileChooser;
+import javax.swing.filechooser.FileNameExtensionFilter;
+import javax.swing.filechooser.FileSystemView;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 import javax.swing.*;
-/**
- *
- * @author Maxcel Center
- */
+
 public class GraficacionJacket extends JFrame{
  
 	public GraficacionJacket(){
@@ -77,18 +68,24 @@ public class GraficacionJacket extends JFrame{
         boton.addActionListener((ActionEvent e) -> {
             guardar(window);
         });
-        boton.setLocation(400, 300);
+        boton.setLocation(340, 200);
         boton.setSize(100,50);
         window.add(boton);
         window.setVisible(true);
-        window.setSize(420,649);  
+        window.setSize(455,649);  
         
     }
     
     
     public static void guardar(ventana ven)
     {
-        File fichero = new File("foto.jpg");
+        JFileChooser file = new JFileChooser();
+        file.setDialogTitle("Ubicacion para guardar");
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("JPG","jpg");
+        file.setFileFilter(filter);
+        if (file.showSaveDialog(null) == JFileChooser.APPROVE_OPTION)
+        {
+        File fichero = new File(file.getSelectedFile() + ".jpg");
 		String formato = "jpg";
 
 		// Creamos la imagen para dibujar en ella.
@@ -104,6 +101,7 @@ public class GraficacionJacket extends JFrame{
 		} catch (IOException e) {
 			System.out.println("Error de escritura");
 		}
+        }
     }
 
     }
