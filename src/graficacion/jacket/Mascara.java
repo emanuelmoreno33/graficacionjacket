@@ -17,6 +17,7 @@ public class Mascara extends JPanel{
         Color rojocrestabarbilla = new Color(230,68,83);
         Color amarillopico = new Color(249,161,53);
         Color azulojo = new Color(196,228,217);
+        Color lineacresta = new Color(109,13,25);
         
         //plumas
         int [] plumax = {
@@ -43,9 +44,79 @@ public class Mascara extends JPanel{
         g.fillPolygon(plumax,plumay,75);
         g.setColor(Color.BLACK);
         g.drawPolygon(plumax, plumay,75);
+        //lineas para plumas
+        g.drawLine(154, 65, 164, 73);
+        g.drawLine(142, 62, 136, 65);
+        g.drawLine(144, 76, 150, 72);
+        g.drawLine(150, 72, 157, 71);
+        g.drawLine(123,70,119,67);
+        g.drawLine(119,67,116,67);
+        g.drawLine(112,72,107,77);
+        g.drawLine(107,79,103,86);
+        g.drawLine(111,77,107,83);
+        g.drawLine(118,81,125,81);
+        g.drawLine(125,81,119,77);
+        g.drawLine(146,80,152,75);
+        g.drawLine(152,75,158,76);
+        g.drawLine(120,83,113,82);
+        g.drawLine(113,82,107,89);
+        g.drawLine(109,91,115,86);
+        g.drawLine(115,86,121,86);
+        g.drawLine(164,94,169,95);
+        g.drawLine(171,102,175,110);
+        g.drawLine(161,103,168,108);
+        g.drawLine(162,105,168,110);
+        g.drawLine(106,106,103,120);
+        g.drawLine(112,112,107,119);
+        g.drawLine(115,115,109,124);
+        g.drawLine(116,118,113,125);
+        g.drawLine(117,128,119,148);
+        g.drawLine(117,127,114,138);
+        g.drawLine(110,134,106,145);
+        g.drawLine(112,145,110,154);
+        g.drawLine(163,117,168,122);
+        g.drawLine(173,118,178,125);
+        g.drawLine(166,129,173,135);
         
+        int []fondoplumax = {
+            121,118,110,106,103,102,123
+        };
+        int [] fondoplumay = {
+            163,165,172,166,170,154,155
+        };
+        Color grispluma = new Color(211,211,211);
+        g.setColor(grispluma);
+        g.fillPolygon(fondoplumax, fondoplumay, 7);
+        g.setColor(Color.BLACK);
+        int [] plumax1 = {
+         120,122,117,116,111,109,105,103,100,102,97
+        };
+        int [] plumay1 = {
+         164,158,163,159,166,158,162,153,157,149,155
+        };
+        g.drawPolyline(plumax1, plumay1, 11);
+   
+        g.setColor(blancopluma);        
+        int [] plumax11 = {
+         120,122,117,116,111,109,105,103,100,102,97,115,126
+        };
+        int [] plumay11 = {
+         164,158,163,159,166,158,162,153,157,149,155,146,151
+        };
+        g.fillPolygon(plumax11, plumay11, 13);
+        
+        int  [] plumitasx = {
+        138,140,141,144,144,146,147,150,150,153,
+        151,154,154   
+        };
+        int [] plumitasy = {
+        152,154,150,155,151,154,150,156,150,153,
+        147,153,149
+        };
+        g.setColor(Color.BLACK);
+        g.drawPolyline(plumitasx, plumitasy, 13);
+                
         //barbilla
-        
         int[] barbillax = {
         126,123,119,121,117,117,116,117,120,120,
         122,123,125,124,123,122,127,134,138,139,
@@ -64,9 +135,66 @@ public class Mascara extends JPanel{
         g.fillPolygon(barbillax,baribllay,48);
         g.setColor(Color.BLACK);
         g.drawPolygon(barbillax, baribllay,48);
+        g.setColor(lineacresta);
+        int [] barba1xd = {
+            163,160,157,155,154
+        };
+        int  [] barba1yd = {
+            128,124,121,117,116
+        };
+        g.drawPolyline(barba1xd, barba1yd, 5);
+        int [] barba2xd = {
+            162,158,155,153
+        };
+        int  [] barba2yd = {
+            119,115,113,110
+        };
+        g.drawPolyline(barba2xd, barba2yd,4);
+        int [] barba3xd = {
+            157,153,146,143,142,139
+        };
+        int  [] barba3yd = {
+            111,103, 91, 89, 88, 88
+        };
+        g.drawPolyline(barba3xd, barba3yd,6);
+        int [] barba4xd = {
+          149,143,136 
+        };
+        int  [] barba4yd = {
+           90, 86, 85
+        };
+        g.drawPolyline(barba4xd, barba4yd,3);
+        int [] barba1xi = {
+            124,126,126
+        };
+        int  [] barba1yi = {
+            136,134,120
+        };
+        g.drawPolyline(barba1xi, barba1yi,3);
+        int [] barba2xi = {
+           122,124,125,125
+        };
+        int  [] barba2yi = {
+           126,113,115,101
+        };
+        g.drawPolyline(barba2xi, barba2yi,4);
+        int [] barba3xi = {
+           120,122,123,126,130
+        };
+        int  [] barba3yi = {
+           120,112,101, 95, 90
+        };
+        g.drawPolyline(barba3xi, barba3yi,5);
+        int [] barba4xi = {
+            120,122,125,130
+        };
+        int  [] barba4yi = {
+             98, 94, 91, 88
+        };
+        g.drawPolyline(barba4xi, barba4yi,4);
+        
         
         //cresta
-        
         int [] crestax = {
          115,116,116,117,117,119,121,121,122,122,
          123,123,124,124,129,133,135,140,140,138,
@@ -83,17 +211,38 @@ public class Mascara extends JPanel{
         g.fillPolygon(crestax, crestay, 36);
         g.setColor(Color.BLACK);
         g.drawPolygon(crestax, crestay, 36);
+        g.setColor(lineacresta);
+        int [] crestaln1x = {
+            128,129,135
+        };
+        int [] crestaln1y = {
+            78,69,75
+        };
+        g.drawPolyline(crestaln1x, crestaln1y, 3);
+        int [] crestaln2x = {
+            125,126,133
+        };
+        int [] crestaln2y = {
+            66,56,66
+        };
+        g.drawPolyline(crestaln2x, crestaln2y, 3);
+        int [] crestaln3x = {
+            120,121,122,132
+        };
+        int [] crestaln3y = {
+             55, 52, 38, 54
+        };
+        g.drawPolyline(crestaln3x, crestaln3y, 4);
         
         //pico
-        
         int [] fondopicox = {
             129,150,150,143,129
         };
         int [] fondopicoy = {
             121,114,121,132,122
         };
+        g.setColor(Color.BLACK);
         g.fillPolygon(fondopicox, fondopicoy, 4);
-        
         int [] picox = {
           129,142,150,144,139,134,129,129,142  
         };
@@ -104,26 +253,28 @@ public class Mascara extends JPanel{
         g.fillPolygon(picox, picoy, 9);
         g.setColor(Color.BLACK);
         g.drawPolygon(picox, picoy, 9);
-        
         int [] pico2x = {
         129,129,144,146,150,143,141
         };
         int [] pico2y = {
         122,123,136,136,119,131,130
         };
-        
         g.setColor(amarillopico);
         g.fillPolygon(pico2x, pico2y, 7);
         g.setColor(Color.BLACK);
         g.drawPolygon(pico2x, pico2y, 7);
+        g.fillOval(132,98, 2, 2);
+        g.fillOval(139, 97, 2, 2);
+        g.drawLine(136, 99, 142, 127);
         
+        
+        //ojos
         g.setColor(azulojo);
         g.fillOval(108,90, 15, 24);
         g.setColor(Color.BLACK);
         g.drawOval(108,90, 15, 24);
         g.drawOval(110,93,10,18);
         g.fillOval(110,93,10,18);
-        
         g.setColor(azulojo);
         g.fillOval(149,79, 15, 24);
         g.setColor(Color.BLACK);
@@ -131,41 +282,6 @@ public class Mascara extends JPanel{
         g.drawOval(152,82,10,18);
         g.fillOval(152,82,10,18);
         
-//       int [] ojox = {
-//           149,150,151,152,153,
-//           157,158,160,161,162,163,
-//           163,163,162,161,160,
-//           156,154,153,151,149
-//       };
-//       int [] ojoy = {
-//            85, 84, 83, 81, 79,
-//            79, 81, 82, 84, 86, 87,
-//            93, 99,100,101,102,
-//           102,101, 99, 97, 94
-//       };
-//        
-//        g.setColor(azulojo);
-//        g.fillPolygon(ojox, ojoy, 21);
-//        g.setColor(Color.BLACK);
-//        g.drawPolygon(ojox, ojoy, 21);
-//            
-//        int [] pupilax ={
-//            152,152,153,154,
-//            157,159,160,161,161,
-//            160,
-//            159,157,
-//            155,154,152
-//        };
-//        int [] pupilay ={
-//             92, 85, 84, 82,
-//             82, 84, 86, 88, 97,
-//             98,
-//             99, 99,
-//             97, 96, 94
-//        };
-//
-//        g.setColor(Color.BLACK);
-//        g.fillPolygon(pupilax, pupilay, 15);
     }
 }
 
