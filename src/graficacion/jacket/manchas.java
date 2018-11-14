@@ -299,6 +299,11 @@ public class manchas extends JPanel {
         g.setColor(rojomancha);
         g.fillPolygon(m8x, m8y, 7);
         
+        g.setColor(Color.BLACK);
+        g.drawOval(255,437,7,11);
+        g.setColor(rojomancha);
+        g.fillOval(255,437,7,11);
+        
         int [] m9x = {
            257,270,274,274,278,279,281,285,287,291,
            293,297,299,286,264,258,
@@ -337,6 +342,7 @@ public class manchas extends JPanel {
         g.drawPolygon(m10x, m10y, 9);
         g.setColor(rojomancha);
         g.fillPolygon(m10x, m10y, 9);
+        
         
         int [] m11x = {
             186,191,194,194,191,188,186
@@ -396,6 +402,167 @@ public class manchas extends JPanel {
         g.setColor(Color.BLACK);
         g.drawLine(223,443,229,444);
         g.drawLine(238,459,229,444);
+        g.drawLine(251,438,264,429);
+        g.drawLine(251,440,265,431);
+        g.drawLine(252,443,266,433);
+        g.drawLine(254,448,266,435);
+        g.drawLine(253,430,257,430);
+        g.drawLine(257,430,263,426);
+        g.drawLine(249,436,253,434);
+        g.drawLine(253,434,253,432);
+        g.drawLine(251,432,253,432);
+        g.drawLine(248,434,251,432);
+        g.drawLine(292,407,299,403);
+        g.drawLine(294,409,300,404);
+        g.drawLine(294,412,301,406);
+        g.drawLine(295,414,301,409);
+        g.drawLine(296,416,302,410);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(238,453,11,11);
+        g.setColor(rojomancha);
+        g.fillOval(238,453,11,11);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(248,454,7,7);
+        g.setColor(rojomancha);
+        g.fillOval(248,454,7,7);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(243,462,5,5);
+        g.setColor(rojomancha);
+        g.fillOval(243,462,5,5);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(238,479,9,11);
+        g.setColor(rojomancha);
+        g.fillOval(238,479,9,11);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(247,465,4,4);
+        g.setColor(rojomancha);
+        g.fillOval(247,465,4,4);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(237,483,3,6);
+        g.setColor(rojomancha);
+        g.fillOval(237,483,3,6);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(238,488,5,4);
+        g.setColor(rojomancha);
+        g.fillOval(238,488,5,4);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(241,485,5,6);
+        g.setColor(rojomancha);
+        g.fillOval(241,485,5,6);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(247,437,7,6);
+        g.setColor(rojomancha);
+        g.fillOval(247,437,7,6);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(250,477,10,11);
+        g.setColor(rojomancha);
+        g.fillOval(250,477,10,11);
+        
+        int [] manchamartillox = {
+          241,243,241,243,248,249,254,259,264,269,271,261,
+          256,245
+        };
+        int [] manchamartilloy = {
+          498,497,493,490,489,488,484,483,477,484,494,504,
+          505,506
+        };
+        g.setColor(rojomancha);
+        g.fillPolygon(manchamartillox, manchamartilloy, 14);
+        
+        g.setColor(Color.BLACK);
+        g.drawLine(227,472,247,465);
+        g.drawLine(247,465,256,457);
+        g.drawLine(247,465,231,421);
+        g.drawLine(231,421,226,403);
+        g.drawLine(226,403,226,385);
+        g.drawLine(221,424,214,405);
+        g.drawLine(214,405,212,390);
+        g.drawLine(221,424,218,411);
+        
+        //resorte chamarra torso
+        g.drawLine(98,364,98,383);
+        g.drawLine(101,360,101,383);
+        g.drawLine(105,358,103,379);
+        g.drawLine(103,379,105,381);
+        g.drawLine(109,356,107,378);
+        g.drawLine(107,378,108,380);
+        g.drawLine(112,355,110,375);
+        g.drawLine(110,375,111,379);
+        g.drawLine(116,353,114,374);
+        g.drawLine(114,374,116,377);
+        g.drawLine(120,351,118,373);
+        g.drawLine(118,373,120,376);
+        g.drawLine(123,350,121,371);
+        g.drawLine(124,375,121,371);
+        g.drawLine(126,349,125,370);
+        g.drawLine(125,370,127,374);
+        g.drawLine(131,348,129,370);
+        g.drawLine(129,370,131,373);
+        g.drawLine(134,346,131,367);
+        g.drawLine(131,367,134,372);
+        g.drawLine(137,346,136,367);
+        g.drawLine(136,367,138,371);
+        g.drawLine(141,345,139,367);
+        g.drawLine(139,367,142,370);
+        g.drawLine(147,343,146,364);
+        g.drawLine(146,364,149,367);
+        g.drawLine(146,364,149,368);
+        g.drawLine(149,343,150,362);
+        g.drawLine(150,362,153,367);
+        g.drawLine(158,342,158,360);
+        g.drawLine(158,360,161,366);
+        g.drawLine(163,341,164,362);
+        g.drawLine(164,362,165,366);
+        g.drawLine(169,341,169,366);
+        g.drawLine(173,341,173,365);
+        g.drawLine(179,342,178,365);
+        g.drawLine(185,341,184,365);
+        g.drawLine(191,342,189,365);
+        g.drawLine(197,342,196,365);
+        g.drawLine(204,343,205,362);
+        g.drawLine(205,362,202,366);
+        g.drawLine(211,343,212,361);
+        g.drawLine(212,361,209,365);
+        g.drawLine(217,343,217,364);
+        g.drawLine(217,364,216,367);
+        g.drawLine(222,344,223,364);
+        g.drawLine(223,364,221,367);
+        g.drawLine(227,346,229,366);
+        g.drawLine(229,366,227,369);
+        g.drawLine(233,347,234,368);
+        g.drawLine(234,368,233,370);
+        g.drawLine(237,349,238,368);
+        g.drawLine(238,368,237,372);
+        g.drawLine(241,351,242,368);
+        g.drawLine(242,368,240,372);
+        g.drawLine(245,352,245,373);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(186,401,7,7);
+        g.setColor(rojomancha);
+        g.fillOval(186,401,7,7);
+
+        g.setColor(Color.BLACK);
+        g.drawOval(195,398,4,4);
+        g.setColor(rojomancha);
+        g.fillOval(195,398,4,4);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(250,477,10,11);
+        g.setColor(rojomancha);
+        g.fillOval(250,477,10,11);
+        
+        //lineas torso
         
         
      }
