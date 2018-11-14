@@ -108,5 +108,49 @@ public class Pantalon extends JPanel{
         g.fillPolygon(trab3x, trab3y, 4);
         g.fillPolygon(trab4x, trab4y, 4);
         
+        g.setColor(Color.BLACK);
+        g.drawLine(139,378,131,396);
+        g.drawLine(153,376,153,380);
+        g.drawLine(152,383,152,386);
+        g.drawLine(153,390,153,392);
+        g.drawLine(153,395,154,399);
+        g.drawLine(154,402,155,405);
+        g.drawLine(156,408,157,412);
+        g.drawLine(158,414,158,417);
+        g.drawLine(159,420,159,422);
+        g.drawLine(156,385,164,394);
+        g.drawLine(162,373,169,385);
+        g.drawLine(172,370,179,378);
+        g.drawLine(196,370,201,382);
+        g.drawLine(158,404,181,416);
+        g.drawLine(144,406,129,412);
+        g.drawLine(143,430,127,440);
+        g.drawLine(89,419,104,419);
+        g.drawLine(162,434,122,456);
+        g.drawLine(150,438,139,456);
+        g.drawLine(76,474,91,483);
+        
+        
+         Color luzrosa = new Color(255,121,255);
+         int [] luzx1 = {
+           237,224,230,236,241,235,236,241,263  
+         };
+         int [] luzy1 = {
+           375,379,384,383,388,399,405,409,380
+         };
+         g.setColor(luzrosa);
+         g.fillPolygon(luzx1, luzy1,9);
+         
+         int [] luzx2 = {
+             270,265,268,273,276,272,270,284,286,259,
+             276,257,278,288,233,320,279,326
+         };
+         int [] luzy2 = {
+             453,465,480,481,502,506,520,518,521,532,
+             533,545,545,549,579,597,610,610
+         };
+         g.setColor(luzrosa);
+         g.fillPolygon(luzx2, luzy2,18);
+         
 }
 }
