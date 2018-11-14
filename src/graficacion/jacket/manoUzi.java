@@ -151,7 +151,7 @@ public class manoUzi extends JPanel {
         /**********ARMA*********
              Cuerpo del arma parte lateral*/
         
-       Color armaPLateral = new Color(109,111,162);
+       Color armaPLateral = new Color(56,206,239);
        int [] armaLateralX = {47,65,33,14,47};
        
        int [] armaLateralY = {372,383,486,476,372};
