@@ -14,7 +14,60 @@ public class manchas extends JPanel {
     public void paint(Graphics g)
     {
         Color rojomancha = new Color(190,29,60);
+        Color cafesombra = new Color(233,173,124);
+        Color luzrosa = new Color(255,121,255);
         //brazo
+         int [] sombrax4 = {
+         251,256,286,286,262,251
+        };
+        int [] sombray4 = {
+         291,287,283,290,297,296
+        };
+        g.setColor(cafesombra);
+        g.fillPolygon(sombrax4,sombray4,6);
+        g.fillOval(281,237,9,18);
+        g.fillRect(287,266,9,19);
+        g.fillRect(293,271,6,8);
+        
+        int [] sombrax9 = {
+        247,241,240,226,224,250,249,244,244,247,247
+        };
+        int [] sombray9 = {
+        333,344,348,354,367,374,371,365,356,350,332
+        };
+        g.setColor(luzrosa);
+        g.fillPolygon(sombrax9,sombray9,11);
+        
+        int [] sombrax16 = {
+        85,81,82,87,86
+        };
+        int [] sombray16= {
+        332,335,347,347,341
+        };
+        g.setColor(luzrosa);
+        g.fillPolygon(sombrax16,sombray16,5);
+        g.fillOval(82,375,12,8);
+        g.fillOval(87,369,8,8);
+        g.fillOval(85,387,9,13);
+        
+        int [] sombrax14 = {
+        166,138,137,147,167
+        };
+        int [] sombray14 = {
+        449,501,523,499,449
+        };
+        g.setColor(luzrosa);
+        g.fillPolygon(sombrax14,sombray14,5);
+        
+        int [] sombrax15 = {
+        172,147,124,125,141,141,129,116,132,141,163,174
+        };
+        int [] sombray15 = {
+        451,520,552,555,542,544,576,610,610,558,488,456
+        };
+        g.setColor(luzrosa);
+        g.fillPolygon(sombrax15,sombray15,12);
+        
         int [] m1x = {
           245,244,247,249,248,  
         };
@@ -886,7 +939,14 @@ public class manchas extends JPanel {
         g.setColor(rojomancha);
         g.fillPolygon(mancha18x, mancha18y, 4);
         
-        Color luzrosa = new Color(255,121,255);
+        int [] sombrax2 = {
+        283,280,281,282,283,285,283,283,283,298,296
+        };
+        int [] sombray2 = {
+        240,248,264,269,279,285,327,359,366,374,285
+        };
+        g.setColor(cafesombra);
+        g.fillPolygon(sombrax2,sombray2,11);
         
         int [] luzx = {
           268,269,275,276,285,290,297,295,288,277,268  
@@ -919,7 +979,7 @@ public class manchas extends JPanel {
         g.setColor(luzrosa);
         g.fillPolygon(luz2x, luz2y, 18);
         
-        Color cafesombra = new Color(233,173,124);
+        g.fillRect(295,321,6,25);
         
         int [] sombrax1 = {
         219,246,251,253,260,277,274,270,267,260,234,227,223  
@@ -930,14 +990,71 @@ public class manchas extends JPanel {
         g.setColor(cafesombra);
         g.fillPolygon(sombrax1,sombray1,13);
         
-         int [] sombrax2 = {
-        283,280,281,
+        
+        int [] sombrax5 = {
+         228,221,220,222,229
         };
-        int [] sombray2 = {
-        240,248,264,
+        int [] sombray5 = {
+         253,261,264,263,256
         };
-        g.setColor(cafesombra);
-        g.fillPolygon(sombrax2,sombray2,3);
+        g.setColor(luzrosa);
+        g.fillPolygon(sombrax5,sombray5,5);
+        
+        int [] sombrax6 = {
+        230,223,225,231,234,223,226,237
+        };
+        int [] sombray6 = {
+        258,267,269,263,269,283,286,274
+        };
+        g.setColor(luzrosa);
+        g.fillPolygon(sombrax6,sombray6,8);
+        
+        int [] sombrax7 = {
+        238,228,228,226,225,224,217,207,212,215,231,233,235,246
+        };
+        int [] sombray7 = {
+        277,291,301,304,311,313,311,318,321,324,309,314,319,314
+        };
+        g.setColor(luzrosa);
+        g.fillPolygon(sombrax7,sombray7,14);
+        
+        int [] sombrax8 = {
+         244,225,227,231,241,247
+        };
+        int [] sombray8 = {
+         318,331,338,341,337,331
+        };
+        g.setColor(luzrosa);
+        g.fillPolygon(sombrax8,sombray8,6);
+        
+        Color luzamarilla = new Color(232,177,113);
+        int [] sombrax11 = {
+          83, 88,107,106, 85, 82
+        };
+        int [] sombray11 = {
+         201,193,179,175,192,195
+        };
+        g.setColor(luzamarilla);
+        g.fillPolygon(sombrax11,sombray11,6);
+        
+         int [] sombrax12 = {
+         191,192,228,233,223
+        };
+        int [] sombray12 = {
+         142,145,147,145,143
+        };
+        g.setColor(luzamarilla);
+        g.fillPolygon(sombrax12,sombray12,5);
+        
+        Color luzamarilla2 = new Color(246,224,115);
+         int [] sombrax13 = {
+          229,234,238,260,238,232
+        };
+        int [] sombray13 = {
+          148,150,152,174,147,147
+        };
+        g.setColor(luzamarilla2);
+        g.fillPolygon(sombrax13,sombray13,6);
         
         g.setColor(Color.BLACK);
         g.drawLine(217,189,218,203);
@@ -1029,6 +1146,28 @@ public class manchas extends JPanel {
         g.drawLine(92,235,92,227);
         g.drawLine(92,227,98,218);
         g.drawLine(121,183,130,190);
+        g.drawLine(176,404,208,420);
+        g.drawLine(179,443,192,457);
+        g.drawLine(140,464,97,511);
+        g.drawLine(169,441,134,491);
+        g.drawLine(169,445,144,509);
+        g.drawLine(76,474,91,483);
+        g.drawLine(64,555,69,555);
+        g.drawLine(69,554,85,554);
+        g.drawLine(85,554,89,557);
+        g.drawLine(89,557,95,557);
+        g.drawLine(103,550,122,544);
+        g.drawLine(114,559,132,550);
+        g.drawLine(77,584,109,579);
+        g.drawLine(173,449,207,486);
+        g.drawLine(216,516,236,520);
+        g.drawLine(265,523,290,520);
+        g.drawLine(251,534,280,532);
+        g.drawLine(222,560,239,550);
+        g.drawLine(228,572,249,555);
+        g.drawLine(281,546,249,555);
+        g.drawLine(253,572,259,572);
+        
         
         
      }

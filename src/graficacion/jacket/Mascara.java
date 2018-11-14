@@ -13,7 +13,8 @@ public class Mascara extends JPanel{
     public void paint(Graphics g)
     {
         Graphics2D g2d;
-        Color blancopluma = new Color(255,255,255);
+        Color blancopluma = new Color(249,249,249);
+        Color blancoluz = new Color(255,255,255);
         Color rojocrestabarbilla = new Color(230,68,83);
         Color amarillopico = new Color(249,161,53);
         Color azulojo = new Color(196,228,217);
@@ -44,7 +45,27 @@ public class Mascara extends JPanel{
         g.fillPolygon(plumax,plumay,75);
         g.setColor(Color.BLACK);
         g.drawPolygon(plumax, plumay,75);
+        
+        int [] luzx1 = {
+            146,144,147,155,155,150
+        };
+        int [] luzy1 = {
+             64, 81, 82, 74, 65, 63
+        };
+        g.setColor(blancoluz);
+        g.fillPolygon(luzx1, luzy1, 6);
+         int [] luzx2 = {
+            163,167,170,165,160,159
+        };
+        int [] luzy2 = {
+             86, 99,118,118,110, 98
+        };
+        g.setColor(blancoluz);
+        g.fillPolygon(luzx2, luzy2, 6);
+        
+        
         //lineas para plumas
+        g.setColor(Color.BLACK);
         g.drawLine(154, 65, 164, 73);
         g.drawLine(142, 62, 136, 65);
         g.drawLine(144, 76, 150, 72);
