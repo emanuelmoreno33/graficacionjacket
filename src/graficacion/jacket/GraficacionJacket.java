@@ -1,27 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package graficacion.jacket;
-import java.awt.GridLayout;
-import java.awt.FlowLayout;
-import java.awt.*;
-import javax.swing.JFrame;
 import java.awt.event.*;
 
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import javax.swing.JFileChooser;
+import javax.swing.filechooser.FileNameExtensionFilter;
+import javax.swing.filechooser.FileSystemView;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 import javax.swing.*;
-/**
- *
- * @author Maxcel Center
- */
+
 public class GraficacionJacket extends JFrame{
  
 	public GraficacionJacket(){
@@ -40,10 +32,28 @@ public class GraficacionJacket extends JFrame{
         palmas palmasdibujo = new palmas();
         Torso torsodibujo = new Torso();
         Pantalon pantalondibujo = new Pantalon();
+
         brazoMartillo brazomartilloDibujo = new brazoMartillo();
         manoUzi manoArma = new manoUzi();
-//el que se muestra primero va arriba,lo que seria la mascara, al final debe estar el degradado
 
+        brazos brazosdibujo = new brazos();
+        manomartillo manoderecha = new manomartillo();
+        Mascara mascaradibujo = new Mascara();
+        manchas manchasdibujo = new manchas();
+
+//el que se muestra primero va arriba,lo que seria la mascara, al final debe estar el degradado
+        manchasdibujo.setBounds(0, 0, 350, 650);
+        window.getContentPane().add(manchasdibujo);
+        
+        mascaradibujo.setBounds(0,0,350,650);
+        window.getContentPane().add(mascaradibujo);
+
+        manoderecha.setBounds(0, 0, 350, 650);
+        window.getContentPane().add(manoderecha);
+
+        brazosdibujo.setBounds(0, 0, 350, 650);
+        window.getContentPane().add(brazosdibujo);
+        
         torsodibujo.setBounds(0,0,350,650);
         window.getContentPane().add(torsodibujo);
 
@@ -68,15 +78,29 @@ public class GraficacionJacket extends JFrame{
         degradado.setBounds(0, 0, 350, 650);
         window.getContentPane().add(degradado);
         
+        JButton boton = new JButton();
+        boton.setText("Guardar");
+        boton.addActionListener((ActionEvent e) -> {
+            guardar(window);
+        });
+        boton.setLocation(340, 200);
+        boton.setSize(100,50);
+        window.add(boton);
         window.setVisible(true);
-        window.setSize(356,649);  
+        window.setSize(455,649);  
         
     }
     
     
-    public void guardar(ventana ven)
+    public static void guardar(ventana ven)
     {
-        File fichero = new File("foto.jpg");
+        JFileChooser file = new JFileChooser();
+        file.setDialogTitle("Ubicacion para guardar");
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("JPG","jpg");
+        file.setFileFilter(filter);
+        if (file.showSaveDialog(null) == JFileChooser.APPROVE_OPTION)
+        {
+        File fichero = new File(file.getSelectedFile() + ".jpg");
 		String formato = "jpg";
 
 		// Creamos la imagen para dibujar en ella.
@@ -92,6 +116,7 @@ public class GraficacionJacket extends JFrame{
 		} catch (IOException e) {
 			System.out.println("Error de escritura");
 		}
+        }
     }
 
     }

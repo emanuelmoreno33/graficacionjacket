@@ -14,7 +14,7 @@ public class sol extends JPanel{
         Graphics2D g2d=(Graphics2D)g;
         Color amarillosol = new Color(251, 213, 86);
         g.setColor(amarillosol);
-        g.fillOval(61, 59, 230, 230);
+        g.fillOval(47, 47, 230, 230);
         
     }
 }

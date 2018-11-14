@@ -41,7 +41,6 @@ public class palmas extends JPanel{
         
         g.fillPolygon(v2x,v2y,77);
         
-
         
         Color azul2palma = new Color(25,145,159);
         g.setColor(azul2palma);
