@@ -937,7 +937,7 @@ public class manchas extends JPanel {
         240,248,264,
         };
         g.setColor(cafesombra);
-        g.fillPolygon(sombrax2,sombray2,13);
+        g.fillPolygon(sombrax2,sombray2,3);
         
         g.setColor(Color.BLACK);
         g.drawLine(217,189,218,203);

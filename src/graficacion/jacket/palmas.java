@@ -29,6 +29,7 @@ public class palmas extends JPanel{
             };
         g.fillPolygon(vx1,vy1,51);
         
+
         //Palma izquierda superior
         int [] v2x = {0,7,10,14,19,23,26,29,29,30,32,36,38,40,39,39,37,33,36,34,31,30,35,41,
             47,54,55,55,54,51,49,44,41,44,37,31,34,46,54,64,78,72,68,63,54,44,45,36,22,27,49,54,59,67,72,
@@ -52,5 +53,6 @@ public class palmas extends JPanel{
                       516,501,493,493
         };
         g.fillPolygon(vx3,vy3,24);
+
     }
 }
