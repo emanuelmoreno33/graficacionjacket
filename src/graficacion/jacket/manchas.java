@@ -562,7 +562,473 @@ public class manchas extends JPanel {
         g.setColor(rojomancha);
         g.fillOval(250,477,10,11);
         
-        //lineas torso
+        g.setColor(rojomancha);
+        g.fillOval(130,430,9,9);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(195,430,7,7);
+        g.setColor(rojomancha);
+        g.fillOval(195,430,7,7);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(216,485,4,4);
+        g.setColor(rojomancha);
+        g.fillOval(216,485,4,4);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(223,486,6,6);
+        g.setColor(rojomancha);
+        g.fillOval(223,486,6,6);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(209,500,9,9);
+        g.setColor(rojomancha);
+        g.fillOval(209,500,9,9);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(272,484,6,9);
+        g.setColor(rojomancha);
+        g.fillOval(272,484,6,9);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(213,534,13,9);
+        g.setColor(rojomancha);
+        g.fillOval(213,534,13,9);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(228,548,12,17);
+        g.setColor(rojomancha);
+        g.fillOval(228,548,12,17);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(262,508,6,9);
+        g.setColor(rojomancha);
+        g.fillOval(262,508,6,9);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(216,485,4,4);
+        g.setColor(rojomancha);
+        g.fillOval(216,485,4,4);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(194,413,6,9);
+        g.setColor(rojomancha);
+        g.fillOval(194,413,6,9);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(180,405,10,13);
+        g.setColor(rojomancha);
+        g.fillOval(180,405,10,13);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(201,439,7,11);
+        g.setColor(rojomancha);
+        g.fillOval(201,439,7,11);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(202,448,4,7);
+        g.setColor(rojomancha);
+        g.fillOval(202,448,4,7);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(199,458,5,7);
+        g.setColor(rojomancha);
+        g.fillOval(199,458,5,7);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(193,471,4,9);
+        g.setColor(rojomancha);
+        g.fillOval(193,471,4,9);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(197,481,4,10);
+        g.setColor(rojomancha);
+        g.fillOval(197,481,4,10);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(205,467,4,13);
+        g.setColor(rojomancha);
+        g.fillOval(205,467,4,13);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(232,519,8,19);
+        g.setColor(rojomancha);
+        g.fillOval(232,519,8,19);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(215,550,6,7);
+        g.setColor(rojomancha);
+        g.fillOval(215,550,6,7);
+        
+        int [] mancha13x={
+          206,203,203,202,204,206,207,211,219,225,
+          225,222,232,237,239,244,248,250,247,245,
+          243,240,237,234,227,227,229,228,221,216,
+          215,213,209,206,207
+        };
+        int [] mancha13y={
+          529,525,521,510,508,508,511,508,507,507,
+          505,499,509,514,516,518,527,533,534,528,
+          522,519,518,514,514,511,511,509,511,510,
+          509,510,512,515,528
+        };
+        g.setColor(Color.BLACK);
+        g.drawPolygon(mancha13x, mancha13y, 35);
+        g.setColor(rojomancha);
+        g.fillPolygon(mancha13x, mancha13y, 35);
+        
+        int [] mancha14x = {
+            251,248,248,251,256,255,253,253,252,252,
+            255,258,261,261,263,263,261,262,264,268,
+            271,275,282,282,276,268,258,258,257,254,
+            248,247,249
+        };
+        int [] mancha14y = {
+            555,549,544,541,541,538,534,530,529,524,
+            521,521,524,530,534,538,542,543,548,548,
+            555,556,562,569,575,575,564,567,568,568,
+            562,559,556
+        };
+         g.setColor(Color.BLACK);
+        g.drawPolygon(mancha14x, mancha14y, 33);
+        g.setColor(rojomancha);
+        g.fillPolygon(mancha14x, mancha14y, 33);
+        
+        int [] mancha15x = {
+            272,273,276,278,277,278,278,277,279,279,
+            280,283,284,284,283,279,279,280,277,275,
+            275,272,272,274,274,272
+        };
+        int [] mancha15y = {
+            508,504,504,506,508,509,512,513,516,520,
+            522,523,525,527,528,528,529,532,533,531,
+            528,526,517,515,513,512
+        };
+        g.setColor(Color.BLACK);
+        g.drawPolygon(mancha15x, mancha15y, 26);
+        g.setColor(rojomancha);
+        g.fillPolygon(mancha15x, mancha15y, 26);
+        
+        int [] mancha16x = {
+            213,215,216,217,221,222,222,218,215
+        };
+        int [] mancha16y = {
+            555,554,558,561,561,564,566,566,566
+        };
+        g.setColor(Color.BLACK);
+        g.drawPolygon(mancha16x, mancha16y, 9);
+        g.setColor(rojomancha);
+        g.fillPolygon(mancha16x, mancha16y, 9);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(279,534,6,17);
+        g.setColor(rojomancha);
+        g.fillOval(279,534,6,17);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(289,541,6,19);
+        g.setColor(rojomancha);
+        g.fillOval(289,541,6,19);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(285,556,6,14);
+        g.setColor(rojomancha);
+        g.fillOval(285,556,6,14);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(278,553,5,5);
+        g.setColor(rojomancha);
+        g.fillOval(278,553,5,5);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(224,570,8,17);
+        g.setColor(rojomancha);
+        g.fillOval(224,570,8,17);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(240,563,11,13);
+        g.setColor(rojomancha);
+        g.fillOval(240,563,11,13);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(184,454,10,10);
+        g.setColor(rojomancha);
+        g.fillOval(184,454,10,10);
+
+        g.setColor(rojomancha);
+        g.fillOval(213,526,8,8);
+        
+        g.setColor(rojomancha);
+        g.fillOval(131,480,20,25);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(125,532,8,8);
+        g.setColor(rojomancha);
+        g.fillOval(125,532,8,8);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(112,537,4,10);
+        g.setColor(rojomancha);
+        g.fillOval(112,537,4,10);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(118,500,6,6);
+        g.setColor(rojomancha);
+        g.fillOval(118,500,6,6);
+        
+        g.setColor(rojomancha);
+        g.fillOval(77,506,6,6);
+        
+        g.setColor(rojomancha);
+        g.fillOval(137,531,11,11);
+        
+        g.setColor(rojomancha);
+        g.fillOval(147,471,9,9);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(105,551,8,11);
+        g.setColor(rojomancha);
+        g.fillOval(105,551,8,11);
+        
+        g.setColor(rojomancha);
+        g.fillOval(165,505,9,9);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(131,544,9,4);
+        g.setColor(rojomancha);
+        g.fillOval(131,544,9,4);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(106,551,6,10);
+        g.setColor(rojomancha);
+        g.fillOval(106,551,6,10);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(129,565,5,5);
+        g.setColor(rojomancha);
+        g.fillOval(129,565,5,5);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(130,573,7,7);
+        g.setColor(rojomancha);
+        g.fillOval(130,573,7,7);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(97,566,6,22);
+        g.setColor(rojomancha);
+        g.fillOval(97,566,6,22);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(130,573,7,7);
+        g.setColor(rojomancha);
+        g.fillOval(130,573,7,7);
+        
+        g.setColor(rojomancha);
+        g.fillOval(66,527,21,12);
+        
+        g.setColor(rojomancha);
+        g.fillOval(299,509,13,13);
+        
+        g.setColor(rojomancha);
+        g.fillOval(312,498,6,6);
+        
+        g.setColor(rojomancha);
+        g.fillOval(328,473,7,7);
+        
+        g.setColor(rojomancha);
+        g.fillOval(327,472,7,7);
+        
+        g.setColor(rojomancha);
+        g.fillOval(80,571,20,6);
+        
+        g.setColor(rojomancha);
+        g.fillOval(61,542,7,7);
+        
+        g.setColor(rojomancha);
+        g.fillOval(150,441,7,7);
+        
+        g.setColor(rojomancha);
+        g.drawLine(292,530,303,519);
+        g.drawLine(292,530,301,519);
+        g.drawLine(292,530,300,518);
+        g.drawLine(308,509,328,478);
+        g.drawLine(305,509,320,472);
+        g.drawLine(302,511,304,499);
+        g.drawLine(214,476,209,455);
+        g.drawLine(186,520,183,507);
+        g.drawLine(175,485,171,479);
+        g.drawLine(107,543,101,534);
+        g.drawLine(99,521,85,510);
+        g.drawLine(103,518,94,511);
+        g.drawLine(109,518,99,511);
+        g.drawLine(188,489,183,479);
+        g.drawLine(187,489,183,478);
+        
+        int [] mancha17x = {
+             63, 50, 44, 41, 22, 21, 23, 42, 48, 58, 67
+        };
+        int [] mancha17y = {
+            527,519,518,515,503,499,498,510,516,520,525
+        };
+        g.setColor(Color.BLACK);
+        g.drawPolygon(mancha17x, mancha17y, 11);
+        g.setColor(rojomancha);
+        g.fillPolygon(mancha17x, mancha17y, 11);
+        
+        int [] mancha18x = {
+             49, 41, 40, 52
+        };
+        int [] mancha18y = {
+            504,496,494,500
+        };
+        g.setColor(Color.BLACK);
+        g.drawPolygon(mancha18x, mancha18y, 4);
+        g.setColor(rojomancha);
+        g.fillPolygon(mancha18x, mancha18y, 4);
+        
+        Color luzrosa = new Color(255,121,255);
+        
+        int [] luzx = {
+          268,269,275,276,285,290,297,295,288,277,268  
+        };
+        int [] luzy = {
+          185,209,211,240,239,268,269,256,231,206,187
+        };
+        g.setColor(luzrosa);
+        g.fillPolygon(luzx, luzy, 11);
+        
+        g.fillOval(289,277,9,8);
+        
+        int [] luz1x = {
+          297,288,292,292,290,294,294,300,302,300,299,298,298,
+        };
+        int [] luz1y = {
+          285,293,299,307,311,318,322,322,321,318,312,315,300,
+        };
+        g.setColor(luzrosa);
+        g.fillPolygon(luz1x, luz1y, 10);
+        
+        int [] luz2x = {
+          300,293,290,294,295,291,290,296,296,290,
+          291,297,296,300,301,299,299,300
+        };
+        int [] luz2y = {
+          326,331,340,346,350,353,359,359,362,366,
+          370,370,380,378,373,357,345,334
+        };
+        g.setColor(luzrosa);
+        g.fillPolygon(luz2x, luz2y, 18);
+        
+        Color cafesombra = new Color(233,173,124);
+        
+        int [] sombrax1 = {
+        219,246,251,253,260,277,274,270,267,260,234,227,223  
+        };
+        int [] sombray1 = {
+        155,177,187,217,237,222,209,210,184,174,149,148,151
+        };
+        g.setColor(cafesombra);
+        g.fillPolygon(sombrax1,sombray1,13);
+        
+         int [] sombrax2 = {
+        283,280,281,
+        };
+        int [] sombray2 = {
+        240,248,264,
+        };
+        g.setColor(cafesombra);
+        g.fillPolygon(sombrax2,sombray2,3);
+        
+        g.setColor(Color.BLACK);
+        g.drawLine(217,189,218,203);
+        g.drawLine(218,203,221,210);
+        g.drawLine(221,210,223,202);
+        g.drawLine(223,202,221,191);
+        g.drawLine(221,191,223,183);
+        g.drawLine(227,234,231,215);
+        g.drawLine(262,248,274,219);
+        g.drawLine(244,273,255,265);
+        g.drawLine(255,265,263,262);
+        g.drawLine(263,262,274,250);
+        g.drawLine(243,287,278,271);
+        g.drawLine(291,271,298,275);
+        g.drawLine(247,293,264,281);
+        g.drawLine(270,282,292,282);
+        g.drawLine(250,298,262,298);
+        g.drawLine(290,289,262,298);
+        g.drawLine(250,308,265,303);
+        g.drawLine(253,322,263,315);
+        g.drawLine(263,315,278,315);
+        g.drawLine(278,315,288,321);
+        g.drawLine(282,328,286,330);
+        g.drawLine(286,330,291,329);
+        g.drawLine(261,334,277,334);
+        g.drawLine(277,334,284,336);
+        g.drawLine(257,346,268,342);
+        g.drawLine(277,341,268,342);
+        g.drawLine(277,341,285,338);
+        g.drawLine(277,346,296,347);
+        g.drawLine(254,366,261,366);
+        g.drawLine(283,365,292,360);
+        g.drawLine(292,360,295,360);
+        g.drawLine(289,371,294,371);
+        g.drawLine(291,375,295,375);
+        g.drawLine(187,166,194,175);
+        g.drawLine(204,197,207,201);
+        g.drawLine(207,201,208,212);
+        g.drawLine(201,203,208,212);
+        g.drawLine(208,212,223,239);
+        g.drawLine(203,232,209,236);
+        g.drawLine(209,236,217,237);
+        g.drawLine(221,210,221,232);
+        g.drawLine(201,242,219,242);
+        g.drawLine(158,252,146,256);
+        g.drawLine(174,250,215,247);
+        g.drawLine(215,247,225,242);
+        g.drawLine(216,254,225,242);
+        g.drawLine(205,259,216,254);
+        g.drawLine(159,276,187,261);
+        g.drawLine(172,281,179,277);
+        g.drawLine(188,273,218,265);
+        g.drawLine(192,278,218,265);
+        g.drawLine(218,265,229,256);
+        g.drawLine(170,291,183,283);
+        g.drawLine(220,275,231,262);
+        g.drawLine(217,299,238,275);
+        g.drawLine(235,287,239,281);
+        g.drawLine(231,321,245,314);
+        g.drawLine(229,345,239,339);
+        g.drawLine(204,326,212,326);
+        g.drawLine(212,326,222,318);
+        g.drawLine(177,334,185,333);
+        g.drawLine(185,333,194,325);
+        g.drawLine(194,325,208,322);
+        g.drawLine(155,338,156,334);
+        g.drawLine(156,334,162,326);
+        g.drawLine(156,311,189,301);
+        g.drawLine(148,336,152,330);
+        g.drawLine(143,268,150,266);
+        g.drawLine(142,243,147,238);
+        g.drawLine(142,206,152,201);
+        g.drawLine(129,336,140,338);
+        g.drawLine(118,320,128,327);
+        g.drawLine(94,331,105,345);
+        g.drawLine(97,320,103,323);
+        g.drawLine(103,323,110,323);
+        g.drawLine(110,323,117,330);
+        g.drawLine(89,313,92,316);
+        g.drawLine(89,294,103,286);
+        g.drawLine(94,291,102,290);
+        g.drawLine(93,286,99,281);
+        g.drawLine(100,274,123,264);
+        g.drawLine(118,244,127,240);
+        g.drawLine(127,240,133,240);
+        g.drawLine(133,240,137,241);
+        g.drawLine(91,250,110,235);
+        g.drawLine(88,241,100,223);
+        g.drawLine(92,235,92,227);
+        g.drawLine(92,227,98,218);
+        g.drawLine(121,183,130,190);
         
         
         
@@ -667,7 +1133,6 @@ public class manchas extends JPanel {
         
         //Tornillos UZI
         Color tornillos = new Color(134,121,130);
-        Color hoyos = new Color(75,83,120);
         g.setColor(Color.BLACK);
         g.drawOval(29,477,4,4);
         g.setColor(tornillos);
@@ -687,11 +1152,7 @@ public class manchas extends JPanel {
         g.drawOval(57,387,3,3);
         g.setColor(Color.BLACK);
         g.fillOval(57,387,3,3);
-        
-        g.setColor(Color.BLACK);
-        g.drawOval(7,495,5,8);
-        g.setColor(hoyos);
-        g.fillOval(7,495,5,8);
+       
         
  
         

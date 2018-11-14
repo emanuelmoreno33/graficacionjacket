@@ -253,6 +253,18 @@ public void paint(Graphics g){
         g.setColor(Color.BLACK);
         g.drawPolyline(cuellochamarrax, cuellochamarray, 3);
         
+        int [] sombra2x = {
+            110,119,127,125,125,122,119,114
+        };
+        int [] sombra2y = {
+            173,175,174,174,169,161,164,169
+        };
+        g.setColor(sombra);
+        g.fillPolygon(sombra2x, sombra2y, 8);
+        g.setColor(Color.BLACK);
+        g.drawLine(125,174,121,169);
+        g.drawLine(121,169,119,162);
+
         
         
     }

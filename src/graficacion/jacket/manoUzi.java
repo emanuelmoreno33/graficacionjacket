@@ -267,6 +267,52 @@ public class manoUzi extends JPanel {
        g.setColor(Color.BLACK);
        g.drawPolygon(CañonX,CañonY,12);
        
+       Color CañonHoyos = new Color(75,83,120);
+       int [] CañonHX1 = {6,7,8,9,7,5,4,3,4,6};
+       
+       int [] CañonHY1 = {505,501,498,496,496,497,501,505,506,505};
+       
+       g.setColor(CañonHoyos);
+       g.fillPolygon(CañonHX1,CañonHY1,10);
+       g.setColor(Color.BLACK);
+       g.drawPolygon(CañonHX1,CañonHY1,10);
+       
+       int [] CañonHX2 = {16,18,20,19,17,16,14,15,16};
+       
+       int [] CañonHY2 = {504,499,496,493,493,496,501,503,504};
+       
+       g.setColor(CañonHoyos);
+       g.fillPolygon(CañonHX2,CañonHY2,9);
+       g.setColor(Color.BLACK);
+       g.drawPolygon(CañonHX2,CañonHY2,9);
+       
+       int [] CañonHX3 = {13,10,9,9,10,12,13,14,13};
+       
+       int [] CañonHY3 = {511,513,518,521,522,520,517,513,511};
+       
+       g.setColor(CañonHoyos);
+       g.fillPolygon(CañonHX3,CañonHY3,9);
+       g.setColor(Color.BLACK);
+       g.drawPolygon(CañonHX3,CañonHY3,9);
+       
+       int [] CañonHX4 = {8,6,3,3,5,6,8,8};
+       
+       int [] CañonHY4 = {529,529,535,538,539,539,531,529};
+       
+       g.setColor(CañonHoyos);
+       g.fillPolygon(CañonHX4,CañonHY4,8);
+       g.setColor(Color.BLACK);
+       g.drawPolygon(CañonHX4,CañonHY4,8);
+       
+       int [] CañonHX5 = {0,2,2,0,0};
+       
+       int [] CañonHY5 = {517,518,520,527,517};
+       
+       g.setColor(CañonHoyos);
+       g.fillPolygon(CañonHX5,CañonHY5,5);
+       g.setColor(Color.BLACK);
+       g.drawPolygon(CañonHX5,CañonHY5,5);
+       
        //Culata del arma Parte 1 (fierro)
        Color Culata = new Color(109,111,162);
        int [] Culata2X = {59,59,62,65,67,70,74,80,80,88,
