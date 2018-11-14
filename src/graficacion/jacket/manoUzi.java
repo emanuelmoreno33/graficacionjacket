@@ -178,16 +178,25 @@ public class manoUzi extends JPanel {
        
        //Boton de la parte Superior
        Color boton = new Color(90,102,128);
-       int [] botonX = {18,18,17,17,14,12,15,16,17,17,
+       int [] boton1X = {18,18,17,17,14,12,15,16,17,17,
                         15,12,11,11,12};
        
-       int [] botonY = {451,456,457,458,461,460,457,454,451,450,
+       int [] boton1Y = {451,456,457,458,461,460,457,454,451,450,
                         450,453,455,459,460};
        
        g.setColor(boton);
-       g.fillPolygon(botonX,botonY,15);
+       g.fillPolygon(boton1X,boton1Y,15);
        g.setColor(Color.BLACK);
-       g.drawPolygon(botonX,botonY,15); 
+       g.drawPolygon(boton1X,boton1Y,15); 
+       
+         int [] boton2X = {19,29,30,30,28,27,27,18,19};
+       
+         int [] boton2Y = {450,420,419,418,417,419,421,449,450};
+       
+       g.setColor(boton);
+       g.fillPolygon(boton2X,boton2Y,9);
+       g.setColor(Color.BLACK);
+       g.drawPolygon(boton2X,boton2Y,9); 
        
         //Gatillo del Arma
        Color Gatillo = new Color(74,62,76);
@@ -258,19 +267,8 @@ public class manoUzi extends JPanel {
        g.setColor(Color.BLACK);
        g.drawPolygon(CañonX,CañonY,12);
        
-       
-       //Culata del arma parte 1 (palillos)
+       //Culata del arma Parte 1 (fierro)
        Color Culata = new Color(109,111,162);
-       int [] Culata1X = {64,69,69,69,68,66,61,58,61,60,59,56};
-       
-       int [] Culata1Y = {381,365,364,361,361,362,380,377,365,364,364,376};
-       
-       g.setColor(Culata);
-       g.fillPolygon(Culata1X,Culata1Y,12);
-       g.setColor(Color.BLACK);
-       g.drawPolygon(Culata1X,Culata1Y,12);
-       
-       //Culata del arma Parte 2 (fierro)
        int [] Culata2X = {59,59,62,65,67,70,74,80,80,88,
                           87,82,82,81,81,74,73,69,68,62,59};
        
@@ -281,6 +279,17 @@ public class manoUzi extends JPanel {
        g.fillPolygon(Culata2X,Culata2Y,21);
        g.setColor(Color.BLACK);
        g.drawPolygon(Culata2X,Culata2Y,21);
+       
+       
+       //Culata del arma parte 2 (palillos)
+       int [] Culata1X = {64,69,69,69,68,66,61,58,61,60,59,56};
+       
+       int [] Culata1Y = {381,365,364,361,361,362,380,377,365,364,364,376};
+       
+       g.setColor(Culata);
+       g.fillPolygon(Culata1X,Culata1Y,12);
+       g.setColor(Color.BLACK);
+       g.drawPolygon(Culata1X,Culata1Y,12);
        
        //Culata Parte 3 (Correa)
        int [] Culata3X = {86,84,80,77,75,74,74,76,80,82,

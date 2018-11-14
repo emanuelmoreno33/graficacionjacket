@@ -565,6 +565,137 @@ public class manchas extends JPanel {
         //lineas torso
         
         
+        
+        
+        //Lineas Brazo Arma
+        g.setColor(Color.BLACK);
+        g.drawLine(86,244,80,237);
+        g.drawLine(80,237,76,224);
+        g.drawLine(85,249,78,250);
+        g.drawLine(88,268,78,258);
+        g.drawLine(82,274,77,271);
+        g.drawLine(86,279,79,278);
+        g.drawLine(86,289,81,287);
+        g.drawLine(83,286,76,286);
+        g.drawLine(81,287,74,290);
+        g.drawLine(80,297,73,300);
+        g.drawLine(86,300,78,300);
+        g.drawLine(78,300,70,305);
+        g.drawLine(70,319,74,317);
+        g.drawLine(78,323,73,323);
+        g.drawLine(81,328,76,329);
+        g.drawLine(74,345,63,351);
+        g.drawLine(68,356,80,349);
+        g.drawLine(94,371,86,366);
+        g.drawLine(87,374,73,370);
+        g.drawLine(65,380,79,378);
+        g.drawLine(66,391,69,394);
+        g.drawLine(69,394,77,393);
+        g.drawLine(77,393,84,386);
+        
+        //Lineas manga brazo arma
+        g.setColor(Color.BLACK);
+        g.drawLine(59,405,60,411);
+        g.drawLine(65,395,64,411);
+        g.drawLine(71,395,69,411);
+        g.drawLine(76,395,73,411);
+        g.drawLine(80,396,80,406);
+        g.drawLine(80,406,77,412);
+        g.drawLine(86,398,84,407);
+        g.drawLine(84,407,81,414);
+        g.drawLine(88,401,88,409);
+        g.drawLine(88,409,84,416);
+        g.drawLine(85,417,89,415);
+        
+        //Lineas de la banda de la mano con el arma
+        g.setColor(Color.BLACK);
+        g.drawLine(55,425,56,420);
+        g.drawLine(66,411,72,419);
+        g.drawLine(72,419,75,428);
+        g.drawLine(68,433,76,427);
+        g.drawLine(77,427,77,413);
+        g.drawLine(77,427,88,428);
+        g.drawLine(69,434,83,440);
+        g.drawLine(70,432,84,437);
+        g.drawLine(86,428,81,432);
+        g.drawLine(80,415,80,420);
+        
+        //Lineas de los dedos
+        g.setColor(Color.BLACK);
+        g.drawLine(60,442,58,441);
+        g.drawLine(72,458,68,457);
+        g.drawLine(78,459,74,459);
+        g.drawLine(80,449,78,449);
+        g.drawLine(70,444,73,446);
+        g.drawLine(64,440,66,441);
+        
+        //Lineas de el Arma
+        g.setColor(Color.BLACK);
+        g.drawLine(37,376,46,373);
+        g.drawLine(35,383,44,381);
+        g.drawLine(44,381,50,395);
+        g.drawLine(50,395,50,400);
+        g.drawLine(50,400,25,478);
+        g.drawLine(25,478,25,482);
+        g.drawLine(49,401,43,397);
+        g.drawLine(43,397,20,469);
+        g.drawLine(20,469,25,473);
+        g.drawLine(45,398,22,470);
+        g.drawLine(48,400,24,473);
+        
+        g.drawLine(29,500,34,496);
+        g.drawLine(34,496,36,493);
+        g.drawLine(36,493,36,488);
+        
+        g.drawLine(24,489,32,494);
+        g.drawLine(29,493,33,487);
+        g.drawLine(30,491,19,484);
+        g.drawLine(19,484,10,482);
+        
+        g.drawLine(47,510,52,505);
+        g.drawLine(52,505,53,498);
+        g.drawLine(51,513,57,507);
+        g.drawLine(57,507,58,501);
+        g.drawLine(57,515,61,510);
+        g.drawLine(61,510,62,504);
+        
+        g.drawLine(59,362,68,360);
+        g.drawLine(70,367,73,367);
+        g.drawLine(73,367,71,364);
+        g.drawLine(75,356,83,356);
+        g.drawLine(83,356,88,354);
+        
+        //Tornillos UZI
+        Color tornillos = new Color(134,121,130);
+        Color hoyos = new Color(75,83,120);
+        g.setColor(Color.BLACK);
+        g.drawOval(29,477,4,4);
+        g.setColor(tornillos);
+        g.fillOval(29,477,4,4);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(38,446,2,2);
+        g.setColor(Color.BLACK);
+        g.fillOval(38,446,2,2);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(50,415,2,2);
+        g.setColor(Color.BLACK);
+        g.fillOval(50,415,2,2);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(57,387,3,3);
+        g.setColor(Color.BLACK);
+        g.fillOval(57,387,3,3);
+        
+        g.setColor(Color.BLACK);
+        g.drawOval(7,495,5,8);
+        g.setColor(hoyos);
+        g.fillOval(7,495,5,8);
+        
+ 
+        
+        
      }
     
 }
