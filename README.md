@@ -2,7 +2,7 @@
 
 ## avances
 - [X] fondo degradado
-- [ ] lineas en el fondo
+- [ ] lineas en el fondo (no es obligatorio)
 - [X] sol
 - [X] ciudad
 - [ ] palmas
@@ -27,4 +27,4 @@
 - [ ] degradado parte inferior
 
 ## Imagen
-![Imagen a diseñar](/image-44585998-hotline-miami-iphone-wallpaper.jpg)
+![Imagen a diseñar](/imagen original no modificar.jpg)
